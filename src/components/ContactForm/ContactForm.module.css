@@ -1,0 +1,27 @@
+.form {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.contactName,
+.contactNumber {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.nameLabel,
+.numberLabel {
+  display: block;
+  text-align: left;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: left;
+}
