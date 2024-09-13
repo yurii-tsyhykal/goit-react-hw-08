@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import css from './RegistrationForm.module.css';
 import { useId } from 'react';
 import { useDispatch } from 'react-redux';
-import { userRegister } from '../../redux/auth/operation';
+import { userRegister } from '../../redux/auth/operations';
 
 const ProfileValidationSchema = Yup.object().shape({
   name: Yup.string()

@@ -15,13 +15,13 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { RestrictedRoute } from './components/RestrictedRoute/RestrictedRoute';
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 import Layout from './components/Layout/Layout';
-import { userRefresh } from './redux/auth/operation';
+import { userRefresh } from './redux/auth/operations';
 import {
   selectAuthIsLoggedIn,
   selectAuthIsRefreshing,
 } from './redux/auth/selectors';
 import Loader from './components/Loader/Loader';
-import { fetchContacts } from './redux/contacts/operation';
+import { fetchContacts } from './redux/contacts/operations';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
