@@ -3,7 +3,7 @@ import css from './ContactForm.module.css';
 import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
+import { addContact } from '../../redux/contacts/operation';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -42,6 +42,7 @@ const ContactForm = () => {
           type="text"
           name="name"
           id={nameField}
+          placeholder="Jacob Mercer"
         />
         <ErrorMessage className={css.error} name="name" component="span" />
         <label htmlFor={numberField} className={css.numberLabel}>
@@ -52,6 +53,7 @@ const ContactForm = () => {
           type="text"
           name="number"
           id={numberField}
+          placeholder="761-23-96"
         />
         <ErrorMessage className={css.error} name="number" component="span" />
         <button type="submit">Add contact</button>

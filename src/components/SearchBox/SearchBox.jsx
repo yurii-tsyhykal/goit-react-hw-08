@@ -1,9 +1,10 @@
-import { useDispatch, useSelector } from "react-redux";
-import { changeFilter, selectNameFilter } from "../../redux/filtersSlice/filtersSlice";
+import { useDispatch, useSelector } from 'react-redux';
+import { selectNameFilter } from '../../redux/filters/selectors';
+import { changeFilter } from '../../redux/filters/slice';
 
 const SearchBox = () => {
   const dispatch = useDispatch();
-  const filterValue = useSelector(selectNameFilter)
+  const filterValue = useSelector(selectNameFilter);
   return (
     <div style={{ margin: 20 }}>
       <p>Find contacts by name</p>
